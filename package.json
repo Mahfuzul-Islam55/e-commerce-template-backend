@@ -1,0 +1,32 @@
+{
+  "name": "e-commerce-template-backend",
+  "version": "1.0.0",
+  "description": "This is an assignment project.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahfuzul-Islam55/e-commerce-template-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Mahfuzul-Islam55/e-commerce-template-backend/issues"
+  },
+  "homepage": "https://github.com/Mahfuzul-Islam55/e-commerce-template-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
