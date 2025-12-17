@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import dotenv from "dotenv";
+import "./src/config/data-source.js";
 
 dotenv.config();
 const app = express();
@@ -14,8 +15,10 @@ app.get("/", (res) => {
   res.send("Hello Task");
 });
 
-app.listen(5000, () => {
-  console.log("Server is running");
+const PORT = process.env.PORT;
+
+app.listen(PORT, () => {
+  console.log("Server is running", PORT);
 });
 
 export default app;
