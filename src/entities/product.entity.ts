@@ -35,7 +35,7 @@ export class Product {
   image!: string;
 
   @Column(() => Rating)
-  rating!: Rating;
+  rating?: Rating;
 
   @CreateDateColumn()
   createdAt!: Date;

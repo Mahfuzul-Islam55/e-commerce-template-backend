@@ -4,6 +4,7 @@ import cors from "cors";
 import helmet from "helmet";
 import dotenv from "dotenv";
 import "./config/data-source";
+import productRouter from "./modules/product/product.route";
 
 dotenv.config();
 
@@ -12,6 +13,8 @@ const app: Application = express();
 app.use(cors());
 app.use(helmet());
 app.use(express.json());
+
+app.use("/api/products", productRouter);
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello Task");
